@@ -13,6 +13,7 @@
 		520806E91BDE8B160043D005 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520806E81BDE8B160043D005 /* Images.xcassets */; };
 		520806EC1BDE8B160043D005 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520806EA1BDE8B160043D005 /* LaunchScreen.xib */; };
 		520806F81BDE8B160043D005 /* HoboAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520806F71BDE8B160043D005 /* HoboAppTests.swift */; };
+		520807021BDE96900043D005 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 520807011BDE96900043D005 /* Settings.bundle */; };
 		6E355879B377873E081A205E /* Pods_HoboApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B944F0CF7446A81371C3091C /* Pods_HoboApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		520806F11BDE8B160043D005 /* HoboAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoboAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		520806F61BDE8B160043D005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		520806F71BDE8B160043D005 /* HoboAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoboAppTests.swift; sourceTree = "<group>"; };
+		520807011BDE96900043D005 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		5D5D9E8333EB7B51DFEEAB94 /* Pods-HoboApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoboApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HoboApp/Pods-HoboApp.release.xcconfig"; sourceTree = "<group>"; };
 		9F9D6B277A77244BA4CB3204 /* Pods-HoboApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoboApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HoboApp/Pods-HoboApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B944F0CF7446A81371C3091C /* Pods_HoboApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoboApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				520806E01BDE8B160043D005 /* Info.plist */,
+				520807011BDE96900043D005 /* Settings.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -188,6 +191,11 @@
 				TargetAttributes = {
 					520806DB1BDE8B160043D005 = {
 						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					520806F01BDE8B160043D005 = {
 						CreatedOnToolsVersion = 6.4;
@@ -219,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520807021BDE96900043D005 /* Settings.bundle in Resources */,
 				520806E71BDE8B160043D005 /* Main.storyboard in Resources */,
 				520806EC1BDE8B160043D005 /* LaunchScreen.xib in Resources */,
 				520806E91BDE8B160043D005 /* Images.xcassets in Resources */,

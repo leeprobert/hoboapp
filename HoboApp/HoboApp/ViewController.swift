@@ -7,17 +7,30 @@
 //
 
 import UIKit
+import Mapbox
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MGLMapViewDelegate {
 
+    @IBOutlet var mapView: MGLMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        mapView.delegate = self;
+        mapView.showsUserLocation = true;
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: ---------- MGLMapView Delegate
+    
+    func mapView(mapView: MGLMapView, didUpdateUserLocation userLocation: MGLUserLocation?) {
+    
+        print(userLocation?.description)
+        mapView.setCenterCoordinate(userLocation!.location!.coordinate, zoomLevel: 10, animated: true)
     }
 
 
