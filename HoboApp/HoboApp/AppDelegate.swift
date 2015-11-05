@@ -14,11 +14,40 @@ import Bolts
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    // MARK: login/registration
+    
+    func login(){
+        
+        let currentUser = PFUser.currentUser()
+        if currentUser != nil {
+            
+            print("Current User found! \(currentUser!.username)")
+            return
+        }
+        
+        // Login
+        
+        PFUser.logInWithUsernameInBackground("leeprobert", password:"sm3gh3ad") {
+            (user: PFUser?, error: NSError?) -> Void in
+            if user != nil {
+                
+                print("Success! Logged in \(user!.username)")
+                
+            } else {
+                
+                print(error?.description)
+            }
+        }
+    }
 
     // MARK: boilerplate
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // load Styles
+        StyleManager.sharedInstance.loadStyles()
         
         // [Optional] Power your app with Local Datastore. For more info, go to
         // https://parse.com/docs/ios_guide#localdatastore/iOS
@@ -30,6 +59,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        login()
         
         return true
     }

@@ -9,11 +9,20 @@
 /* Begin PBXBuildFile section */
 		520806E21BDE8B160043D005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520806E11BDE8B160043D005 /* AppDelegate.swift */; };
 		520806E41BDE8B160043D005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520806E31BDE8B160043D005 /* ViewController.swift */; };
-		520806E71BDE8B160043D005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520806E51BDE8B160043D005 /* Main.storyboard */; };
 		520806E91BDE8B160043D005 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520806E81BDE8B160043D005 /* Images.xcassets */; };
 		520806EC1BDE8B160043D005 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520806EA1BDE8B160043D005 /* LaunchScreen.xib */; };
 		520806F81BDE8B160043D005 /* HoboAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520806F71BDE8B160043D005 /* HoboAppTests.swift */; };
 		520807021BDE96900043D005 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 520807011BDE96900043D005 /* Settings.bundle */; };
+		520CF6B11BE8DD0900A905B5 /* HoboTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6B01BE8DD0900A905B5 /* HoboTableViewController.swift */; };
+		520CF6B61BEA162400A905B5 /* hoboStyles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 520CF6B31BEA162400A905B5 /* hoboStyles.plist */; };
+		520CF6BA1BEA175400A905B5 /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6B91BEA175400A905B5 /* StyleManager.swift */; };
+		520CF6C11BEA513D00A905B5 /* UIColor_hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6C01BEA513D00A905B5 /* UIColor_hex.swift */; };
+		520CF6C31BEA525A00A905B5 /* UIColor_rgb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6C21BEA525A00A905B5 /* UIColor_rgb.swift */; };
+		5254C58B1BEB60460025CA97 /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6B91BEA175400A905B5 /* StyleManager.swift */; };
+		5254C58D1BEB607B0025CA97 /* StyleManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254C58C1BEB607B0025CA97 /* StyleManagerTests.swift */; };
+		5254C58E1BEB76580025CA97 /* UIColor_hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6C01BEA513D00A905B5 /* UIColor_hex.swift */; };
+		5254C58F1BEB765C0025CA97 /* UIColor_rgb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6C21BEA525A00A905B5 /* UIColor_rgb.swift */; };
+		5254C5921BEBAC4D0025CA97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5254C5901BEBAC4D0025CA97 /* Main.storyboard */; };
 		6E355879B377873E081A205E /* Pods_HoboApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B944F0CF7446A81371C3091C /* Pods_HoboApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,13 +41,22 @@
 		520806E01BDE8B160043D005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		520806E11BDE8B160043D005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		520806E31BDE8B160043D005 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		520806E61BDE8B160043D005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		520806E81BDE8B160043D005 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		520806EB1BDE8B160043D005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		520806F11BDE8B160043D005 /* HoboAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoboAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		520806F61BDE8B160043D005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		520806F71BDE8B160043D005 /* HoboAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoboAppTests.swift; sourceTree = "<group>"; };
 		520807011BDE96900043D005 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		520CF6B01BE8DD0900A905B5 /* HoboTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoboTableViewController.swift; sourceTree = "<group>"; };
+		520CF6B21BEA162300A905B5 /* HoboApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HoboApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		520CF6B31BEA162400A905B5 /* hoboStyles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = hoboStyles.plist; path = styles/hoboStyles.plist; sourceTree = "<group>"; };
+		520CF6B41BEA162400A905B5 /* StyleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StyleManager.h; path = styles/StyleManager.h; sourceTree = "<group>"; };
+		520CF6B51BEA162400A905B5 /* StyleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StyleManager.m; path = styles/StyleManager.m; sourceTree = "<group>"; };
+		520CF6B91BEA175400A905B5 /* StyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyleManager.swift; path = styles/StyleManager.swift; sourceTree = "<group>"; };
+		520CF6C01BEA513D00A905B5 /* UIColor_hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColor_hex.swift; path = styles/UIColor_hex.swift; sourceTree = "<group>"; };
+		520CF6C21BEA525A00A905B5 /* UIColor_rgb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColor_rgb.swift; path = styles/UIColor_rgb.swift; sourceTree = "<group>"; };
+		5254C58C1BEB607B0025CA97 /* StyleManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleManagerTests.swift; sourceTree = "<group>"; };
+		5254C5911BEBAC4D0025CA97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D5D9E8333EB7B51DFEEAB94 /* Pods-HoboApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoboApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HoboApp/Pods-HoboApp.release.xcconfig"; sourceTree = "<group>"; };
 		9F9D6B277A77244BA4CB3204 /* Pods-HoboApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoboApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HoboApp/Pods-HoboApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B944F0CF7446A81371C3091C /* Pods_HoboApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoboApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,12 +104,15 @@
 		520806DE1BDE8B160043D005 /* HoboApp */ = {
 			isa = PBXGroup;
 			children = (
+				520CF6B81BEA164100A905B5 /* styles */,
 				520806E11BDE8B160043D005 /* AppDelegate.swift */,
 				520806E31BDE8B160043D005 /* ViewController.swift */,
-				520806E51BDE8B160043D005 /* Main.storyboard */,
+				520CF6B01BE8DD0900A905B5 /* HoboTableViewController.swift */,
 				520806E81BDE8B160043D005 /* Images.xcassets */,
+				5254C5901BEBAC4D0025CA97 /* Main.storyboard */,
 				520806EA1BDE8B160043D005 /* LaunchScreen.xib */,
 				520806DF1BDE8B160043D005 /* Supporting Files */,
+				520CF6B21BEA162300A905B5 /* HoboApp-Bridging-Header.h */,
 			);
 			path = HoboApp;
 			sourceTree = "<group>";
@@ -109,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				520806F71BDE8B160043D005 /* HoboAppTests.swift */,
+				5254C58C1BEB607B0025CA97 /* StyleManagerTests.swift */,
 				520806F51BDE8B160043D005 /* Supporting Files */,
 			);
 			path = HoboAppTests;
@@ -120,6 +142,19 @@
 				520806F61BDE8B160043D005 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		520CF6B81BEA164100A905B5 /* styles */ = {
+			isa = PBXGroup;
+			children = (
+				520CF6B31BEA162400A905B5 /* hoboStyles.plist */,
+				520CF6B41BEA162400A905B5 /* StyleManager.h */,
+				520CF6B51BEA162400A905B5 /* StyleManager.m */,
+				520CF6B91BEA175400A905B5 /* StyleManager.swift */,
+				520CF6C01BEA513D00A905B5 /* UIColor_hex.swift */,
+				520CF6C21BEA525A00A905B5 /* UIColor_rgb.swift */,
+			);
+			name = styles;
 			sourceTree = "<group>";
 		};
 		91E03E6256856AE4863C47C2 /* Frameworks */ = {
@@ -186,6 +221,8 @@
 		520806D41BDE8B160043D005 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = probert;
 				TargetAttributes = {
@@ -228,7 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				520807021BDE96900043D005 /* Settings.bundle in Resources */,
-				520806E71BDE8B160043D005 /* Main.storyboard in Resources */,
+				5254C5921BEBAC4D0025CA97 /* Main.storyboard in Resources */,
+				520CF6B61BEA162400A905B5 /* hoboStyles.plist in Resources */,
 				520806EC1BDE8B160043D005 /* LaunchScreen.xib in Resources */,
 				520806E91BDE8B160043D005 /* Images.xcassets in Resources */,
 			);
@@ -296,8 +334,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520CF6B11BE8DD0900A905B5 /* HoboTableViewController.swift in Sources */,
+				520CF6C11BEA513D00A905B5 /* UIColor_hex.swift in Sources */,
+				520CF6BA1BEA175400A905B5 /* StyleManager.swift in Sources */,
 				520806E41BDE8B160043D005 /* ViewController.swift in Sources */,
 				520806E21BDE8B160043D005 /* AppDelegate.swift in Sources */,
+				520CF6C31BEA525A00A905B5 /* UIColor_rgb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +348,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				520806F81BDE8B160043D005 /* HoboAppTests.swift in Sources */,
+				5254C58F1BEB765C0025CA97 /* UIColor_rgb.swift in Sources */,
+				5254C58E1BEB76580025CA97 /* UIColor_hex.swift in Sources */,
+				5254C58D1BEB607B0025CA97 /* StyleManagerTests.swift in Sources */,
+				5254C58B1BEB60460025CA97 /* StyleManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,20 +366,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		520806E51BDE8B160043D005 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				520806E61BDE8B160043D005 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		520806EA1BDE8B160043D005 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				520806EB1BDE8B160043D005 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		5254C5901BEBAC4D0025CA97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5254C5911BEBAC4D0025CA97 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -427,9 +473,12 @@
 			baseConfigurationReference = 9F9D6B277A77244BA4CB3204 /* Pods-HoboApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HoboApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HoboApp/HoboApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -438,9 +487,11 @@
 			baseConfigurationReference = 5D5D9E8333EB7B51DFEEAB94 /* Pods-HoboApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HoboApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HoboApp/HoboApp-Bridging-Header.h";
 			};
 			name = Release;
 		};
