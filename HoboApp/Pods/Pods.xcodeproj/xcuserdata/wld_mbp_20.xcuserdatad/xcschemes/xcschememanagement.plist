@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ParseUI.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-HoboApp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +37,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>494E97A50AC1C29C384A5B60965E297E</key>
+		<key>4A31CEA90D258DAA1C52CF9B1139C66D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4A31CEA90D258DAA1C52CF9B1139C66D</key>
+		<key>706019C2ED938C92E9D008799D386D61</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -53,6 +58,11 @@
 			<true/>
 		</dict>
 		<key>E0ECC3BD18CAEBE408E9023D3847041A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F710EAB41DD6932844C4A82A87A2628F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

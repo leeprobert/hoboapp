@@ -60,7 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
-        login()
+//        PFUser.logOut() // FORCE THE LOGIN SCREEN
         
         return true
     }

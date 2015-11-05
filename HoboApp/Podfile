@@ -6,6 +6,7 @@ use_frameworks!
 target 'HoboApp' do
 	
   pod 'Parse'
+  pod 'ParseUI'
   pod 'Mapbox-iOS-SDK'
 
 end

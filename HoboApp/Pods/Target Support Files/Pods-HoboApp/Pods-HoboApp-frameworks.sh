@@ -87,9 +87,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-HoboApp/Bolts.framework"
   install_framework "Pods-HoboApp/Mapbox.framework"
   install_framework "Pods-HoboApp/Parse.framework"
+  install_framework "Pods-HoboApp/ParseUI.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-HoboApp/Bolts.framework"
   install_framework "Pods-HoboApp/Mapbox.framework"
   install_framework "Pods-HoboApp/Parse.framework"
+  install_framework "Pods-HoboApp/ParseUI.framework"
 fi
