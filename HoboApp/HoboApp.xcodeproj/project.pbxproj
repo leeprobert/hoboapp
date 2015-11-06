@@ -16,11 +16,11 @@
 		520CF6B11BE8DD0900A905B5 /* HoboTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6B01BE8DD0900A905B5 /* HoboTableViewController.swift */; };
 		520CF6B61BEA162400A905B5 /* hoboStyles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 520CF6B31BEA162400A905B5 /* hoboStyles.plist */; };
 		520CF6BA1BEA175400A905B5 /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6B91BEA175400A905B5 /* StyleManager.swift */; };
-		520CF6C11BEA513D00A905B5 /* UIColor_hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6C01BEA513D00A905B5 /* UIColor_hex.swift */; };
 		520CF6C31BEA525A00A905B5 /* UIColor_rgb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6C21BEA525A00A905B5 /* UIColor_rgb.swift */; };
+		5220759B1BED044300A74112 /* UIColor_hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6C01BEA513D00A905B5 /* UIColor_hex.swift */; };
+		5220759C1BED044500A74112 /* UIColor_hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6C01BEA513D00A905B5 /* UIColor_hex.swift */; };
 		5254C58B1BEB60460025CA97 /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6B91BEA175400A905B5 /* StyleManager.swift */; };
 		5254C58D1BEB607B0025CA97 /* StyleManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254C58C1BEB607B0025CA97 /* StyleManagerTests.swift */; };
-		5254C58E1BEB76580025CA97 /* UIColor_hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6C01BEA513D00A905B5 /* UIColor_hex.swift */; };
 		5254C58F1BEB765C0025CA97 /* UIColor_rgb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6C21BEA525A00A905B5 /* UIColor_rgb.swift */; };
 		5254C5921BEBAC4D0025CA97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5254C5901BEBAC4D0025CA97 /* Main.storyboard */; };
 		5254C5941BEBB1140025CA97 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254C5931BEBB1140025CA97 /* MapViewController.swift */; };
@@ -338,12 +338,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				520CF6B11BE8DD0900A905B5 /* HoboTableViewController.swift in Sources */,
-				520CF6C11BEA513D00A905B5 /* UIColor_hex.swift in Sources */,
 				520CF6BA1BEA175400A905B5 /* StyleManager.swift in Sources */,
 				520806E41BDE8B160043D005 /* EntryViewController.swift in Sources */,
 				520806E21BDE8B160043D005 /* AppDelegate.swift in Sources */,
 				520CF6C31BEA525A00A905B5 /* UIColor_rgb.swift in Sources */,
 				5254C5941BEBB1140025CA97 /* MapViewController.swift in Sources */,
+				5220759C1BED044500A74112 /* UIColor_hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,8 +352,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				520806F81BDE8B160043D005 /* HoboAppTests.swift in Sources */,
+				5220759B1BED044300A74112 /* UIColor_hex.swift in Sources */,
 				5254C58F1BEB765C0025CA97 /* UIColor_rgb.swift in Sources */,
-				5254C58E1BEB76580025CA97 /* UIColor_hex.swift in Sources */,
 				5254C58D1BEB607B0025CA97 /* StyleManagerTests.swift in Sources */,
 				5254C58B1BEB60460025CA97 /* StyleManager.swift in Sources */,
 			);

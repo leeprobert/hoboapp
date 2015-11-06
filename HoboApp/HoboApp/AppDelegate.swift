@@ -15,32 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    // MARK: login/registration
-    
-    func login(){
-        
-        let currentUser = PFUser.currentUser()
-        if currentUser != nil {
-            
-            print("Current User found! \(currentUser!.username)")
-            return
-        }
-        
-        // Login
-        
-        PFUser.logInWithUsernameInBackground("leeprobert", password:"sm3gh3ad") {
-            (user: PFUser?, error: NSError?) -> Void in
-            if user != nil {
-                
-                print("Success! Logged in \(user!.username)")
-                
-            } else {
-                
-                print(error?.description)
-            }
-        }
-    }
-
     // MARK: boilerplate
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -87,8 +61,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-    
-    // TODO: learn Swift quick!
-
 }
 

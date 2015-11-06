@@ -174,9 +174,7 @@ class StyleManager: NSObject {
         return true
     }
     
-    // MARK: PRIVATE ----------------------------------------------
-    
-    private func getTitleTextAttributesForComponent(component: String, state: UIControlState) -> [String: AnyObject] {
+    func getTitleTextAttributesForComponent(component: String, state: UIControlState) -> [String: AnyObject] {
         
         var attrib = [String: AnyObject]()
         
@@ -221,9 +219,6 @@ class StyleManager: NSObject {
         return attrib
     }
     
-    
-    // MARK: PUBLIC -------------------------------------------------
-    
     func getFontForStyleKey(key: String) -> UIFont {
         
         var value:String? = fontsData[key] as? String;
@@ -238,7 +233,7 @@ class StyleManager: NSObject {
             
             // still nil? Just return Arial 18pt font
             if nil == value {
-                return UIFont(name: "ArialMT", size: 18.0)!
+                return UIFont(name: "Arial", size: 18.0)!
             }
         }
         
@@ -268,11 +263,11 @@ class StyleManager: NSObject {
             }
             
             let font:UIFont? = UIFont(name: fontName!, size: CGFloat(NSString(string: fontSize!).floatValue))
-            return font ?? UIFont(name: "ArialMT", size: 18.0)!
+            return font ?? UIFont(name: "Arial", size: 18.0)!
         }
         
         // default Arial 18pt
-        return UIFont(name: "ArialMT", size: 18.0)!
+        return UIFont(name: "Arial", size: 18.0)!
     }
     
     //-------------------------------
