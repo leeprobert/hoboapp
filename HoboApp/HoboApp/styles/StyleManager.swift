@@ -459,4 +459,11 @@ class StyleManager: NSObject {
         
         return metricsData[key] as? Bool ?? false
     }
+    
+    //------------------------------------
+    
+    func getStyleData() -> [String : AnyObject]{
+        
+        return styleData
+    }
 }

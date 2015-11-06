@@ -76,6 +76,61 @@ class StyleManagerTests: XCTestCase {
         }
     }
     
+    func testColorDataKeys(){
+        
+        StyleManager.sharedInstance.loadStyles()
+        if let data:[String : AnyObject]? = StyleManager.sharedInstance.getStyleData() {
+            if let colors:[String : AnyObject]? = data!["colors"] as? [String : AnyObject] {
+                
+                if (colors != nil) {
+                    XCTAssert(colors!["primaryBrandColor"] != nil, "Pass")
+                    XCTAssert(colors!["secondaryBrandColor"] != nil, "Pass")
+                    XCTAssert(colors!["tertiaryBrandColor"] != nil, "Pass")
+                }else{
+                    XCTFail()
+                }
+                
+            }else{
+                XCTFail()
+            }
+        }else{
+            XCTFail()
+        }
+    }
+    
+    func testFontsDataKeys(){
+        
+        StyleManager.sharedInstance.loadStyles()
+        if let data:[String : AnyObject]? = StyleManager.sharedInstance.getStyleData() {
+            if let fonts:[String : AnyObject]? = data!["fonts"] as? [String : AnyObject] {
+                
+                if (fonts != nil) {
+                    XCTAssert(fonts!["default"] != nil, "Pass")
+                    XCTAssert(fonts!["defaultBold"] != nil, "Pass")
+                    XCTAssert(fonts!["mainFont8"] != nil, "Pass")
+                    XCTAssert(fonts!["mainFont10"] != nil, "Pass")
+                    XCTAssert(fonts!["mainFont12"] != nil, "Pass")
+                    XCTAssert(fonts!["mainFont14"] != nil, "Pass")
+                    XCTAssert(fonts!["mainFont16"] != nil, "Pass")
+                    XCTAssert(fonts!["mainFont18"] != nil, "Pass")
+                    XCTAssert(fonts!["mainBoldFont8"] != nil, "Pass")
+                    XCTAssert(fonts!["mainBoldFont10"] != nil, "Pass")
+                    XCTAssert(fonts!["mainBoldFont12"] != nil, "Pass")
+                    XCTAssert(fonts!["mainBoldFont14"] != nil, "Pass")
+                    XCTAssert(fonts!["mainBoldFont16"] != nil, "Pass")
+                    XCTAssert(fonts!["mainBoldFont18"] != nil, "Pass")
+                }else{
+                    XCTFail()
+                }
+                
+            }else{
+                XCTFail()
+            }
+        }else{
+            XCTFail()
+        }
+    }
+    
     func testGetImageForStyleKeyReturnsDefaultEmptyImage() {
         
         if  let _:UIImage = StyleManager.sharedInstance.getImageForStyleKey(""){
@@ -107,9 +162,38 @@ class StyleManagerTests: XCTestCase {
     
     func testUIColorExtensionReturnsColorFromHexString() {
         
-        // test equality for red as testing black is in a different colour space
-        let a:UIColor = UIColor(hexString: "#ff0000")
-        let b:UIColor = UIColor.redColor()
+        // test equality for red, green & blue as testing black is in a different colour space
+        var a:UIColor = UIColor(hexString: "#ff0000")
+        var b:UIColor = UIColor.redColor()
+        
+        XCTAssert(a.description == b.description, "Pass")
+        
+        a = UIColor(hexString: "#00ff00")
+        b = UIColor.greenColor()
+        
+        XCTAssert(a.description == b.description, "Pass")
+        
+        a = UIColor(hexString: "#0000ff")
+        b = UIColor.blueColor()
+        
+        XCTAssert(a.description == b.description, "Pass")
+    }
+    
+    func testUIColorExtensionReturnsColorFromRGBString() {
+        
+        // test equality for red, green & blue as testing black is in a different colour space
+        var a:UIColor = UIColor(rgbString: "255,0,0,1")
+        var b:UIColor = UIColor.redColor()
+        
+        XCTAssert(a.description == b.description, "Pass")
+        
+        a = UIColor(rgbString: "0,255,0,1")
+        b = UIColor.greenColor()
+        
+        XCTAssert(a.description == b.description, "Pass")
+        
+        a = UIColor(rgbString: "0,0,255,1")
+        b = UIColor.blueColor()
         
         XCTAssert(a.description == b.description, "Pass")
     }
