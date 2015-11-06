@@ -48,6 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // load Styles
         StyleManager.sharedInstance.loadStyles()
+        StyleManager.sharedInstance.setAppearances()
         
         // [Optional] Power your app with Local Datastore. For more info, go to
         // https://parse.com/docs/ios_guide#localdatastore/iOS

@@ -24,9 +24,19 @@ class StyleManagerTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testLoadedData() {
+        
+        XCTAssert(StyleManager.sharedInstance.loadStyles(), "Did load StyleManager data via plist")
+    }
+    
+    func testSetAppearances() {
+        
+        XCTAssert(StyleManager.sharedInstance.setAppearances(), "Did set appearances on UIKit components")
+    }
+    
+    func test() {
+        
+        XCTAssert(StyleManager.sharedInstance.setAppearances(), "Did set appearances on UIKit components")
     }
     
     func testPerformanceExample() {

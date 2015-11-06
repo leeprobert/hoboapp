@@ -25,7 +25,7 @@ class StyleManager: NSObject {
     
     // MARK: PUBLIC ------------------------
     
-    func loadStyles() {
+    func loadStyles() -> Bool {
         
         filename = NSBundle.mainBundle().infoDictionary?[filenameKey] as? String
         
@@ -38,17 +38,25 @@ class StyleManager: NSObject {
                 fontsData = (styleData["fonts"] as? [String: AnyObject])!
                 metricsData = (styleData["metrics"] as? [String: AnyObject])!
                 configData = (styleData["config"] as? [String: AnyObject])!
-                setAppearances()
+                
+                return true
                 
             }else{
                 print("Problem loading Styles")
+                
+                return false
             }
         }
+        
+        return false
     }
-    
-    // MARK: PRIVATE ------------------------
    
-    private func setAppearances(){
+    func setAppearances() -> Bool {
+        
+        if styleData.count == 0 {
+            
+            return false
+        }
         
         /*
             UIBarButtonItem -----------------------------------------
@@ -163,9 +171,10 @@ class StyleManager: NSObject {
             
         UITableViewHeaderFooterView.appearance().tintColor = getColourForStyleKey("tableViewHeaderFooterColor")
         
+        return true
     }
     
-    // ----------------------------------------------
+    // MARK: PRIVATE ----------------------------------------------
     
     private func getTitleTextAttributesForComponent(component: String, state: UIControlState) -> [String: AnyObject] {
         
