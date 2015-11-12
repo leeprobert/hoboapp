@@ -64,6 +64,8 @@ class StyleManager: NSObject {
         
         // Normal
         UIBarButtonItem.appearance().setTitleTextAttributes(getTitleTextAttributesForComponent("UIBarButtonItem", state: UIControlState.Normal), forState: UIControlState.Normal)
+        UIBarButtonItem.appearance().setTitleTextAttributes(getTitleTextAttributesForComponent("UIBarButtonItem", state: UIControlState.Selected), forState: UIControlState.Selected)
+        UIBarButtonItem.appearance().setTitleTextAttributes(getTitleTextAttributesForComponent("UIBarButtonItem", state: UIControlState.Disabled), forState: UIControlState.Disabled)
         UIBarButtonItem.appearance().tintColor = getColourForStyleKey("barButtonItemTintColor")
         
         /*
@@ -95,6 +97,7 @@ class StyleManager: NSObject {
         
         UITabBarItem.appearance().setTitleTextAttributes(getTitleTextAttributesForComponent("UITabBarItem", state: UIControlState.Normal), forState:UIControlState.Normal)
         UITabBarItem.appearance().setTitleTextAttributes(getTitleTextAttributesForComponent("UITabBarItem", state: UIControlState.Selected), forState:UIControlState.Selected)
+        UITabBarItem.appearance().setTitleTextAttributes(getTitleTextAttributesForComponent("UITabBarItem", state: UIControlState.Disabled), forState:UIControlState.Disabled)
         
         /*
             UIToolbar -----------------------------------------
@@ -135,6 +138,7 @@ class StyleManager: NSObject {
         
         UISegmentedControl.appearance().setTitleTextAttributes(getTitleTextAttributesForComponent("UISegmentedControl", state: UIControlState.Normal), forState:UIControlState.Normal)
         UISegmentedControl.appearance().setTitleTextAttributes(getTitleTextAttributesForComponent("UISegmentedControl", state: UIControlState.Selected), forState:UIControlState.Selected)
+        UISegmentedControl.appearance().setTitleTextAttributes(getTitleTextAttributesForComponent("UISegmentedControl", state: UIControlState.Disabled), forState:UIControlState.Disabled)
         
         /*
             UISlider -----------------------------------------
@@ -184,9 +188,22 @@ class StyleManager: NSObject {
                 
                 attrib = [
                     NSForegroundColorAttributeName: getColourForStyleKey("barButtonItemTextColor"),
-                    NSFontAttributeName: getFontForStyleKey("mainFont10")
+                    NSFontAttributeName: getFontForStyleKey("mainFont14")
+                ]
+            }else if state == UIControlState.Selected {
+                
+                attrib = [
+                    NSForegroundColorAttributeName: getColourForStyleKey("barButtonItemSelectedTextColor"),
+                    NSFontAttributeName: getFontForStyleKey("mainFont14")
+                ]
+            }else if state == UIControlState.Disabled {
+                
+                attrib = [
+                    NSForegroundColorAttributeName: getColourForStyleKey("barButtonItemDisabledTextColor"),
+                    NSFontAttributeName: getFontForStyleKey("mainFont14")
                 ]
             }
+            
         }else if "UINavigationBar" == component {
             
             if state == UIControlState.Normal {
@@ -201,8 +218,20 @@ class StyleManager: NSObject {
             if state == UIControlState.Normal {
                 
                 attrib = [
-                    NSForegroundColorAttributeName: getColourForStyleKey("barButtonItemTextColor"),
-                    NSFontAttributeName: getFontForStyleKey("mainFont16")
+                    NSForegroundColorAttributeName: getColourForStyleKey("tabBarItemTextColor"),
+                    NSFontAttributeName: getFontForStyleKey("mainFont14")
+                ]
+            } else if state == UIControlState.Selected {
+                
+                attrib = [
+                    NSForegroundColorAttributeName: getColourForStyleKey("tabBarItemSelectedTextColor"),
+                    NSFontAttributeName: getFontForStyleKey("mainFont14")
+                ]
+            } else if state == UIControlState.Disabled {
+                
+                attrib = [
+                    NSForegroundColorAttributeName: getColourForStyleKey("tabBarItemDisabledTextColor"),
+                    NSFontAttributeName: getFontForStyleKey("mainFont14")
                 ]
             }
         }else if "UISegmentedControl" == component {
@@ -210,8 +239,20 @@ class StyleManager: NSObject {
             if state == UIControlState.Normal {
                 
                 attrib = [
-                    NSForegroundColorAttributeName: getColourForStyleKey("barButtonItemTextColor"),
-                    NSFontAttributeName: getFontForStyleKey("mainFont16")
+                    NSForegroundColorAttributeName: getColourForStyleKey("segmentedControlTextColor"),
+                    NSFontAttributeName: getFontForStyleKey("mainFont14")
+                ]
+            } else if state == UIControlState.Selected {
+                
+                attrib = [
+                    NSForegroundColorAttributeName: getColourForStyleKey("segmentedControlSleectedTextColor"),
+                    NSFontAttributeName: getFontForStyleKey("mainFont14")
+                ]
+            } else if state == UIControlState.Disabled {
+                
+                attrib = [
+                    NSForegroundColorAttributeName: getColourForStyleKey("segmentedControlDisabledTextColor"),
+                    NSFontAttributeName: getFontForStyleKey("mainFont14")
                 ]
             }
         }

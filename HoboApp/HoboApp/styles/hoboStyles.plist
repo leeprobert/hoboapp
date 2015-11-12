@@ -4,10 +4,6 @@
 <dict>
 	<key>config</key>
 	<dict>
-		<key>useNavBarShadow</key>
-		<false/>
-		<key>useTextShadows</key>
-		<true/>
 		<key>useIconEmboss</key>
 		<false/>
 	</dict>
@@ -23,20 +19,6 @@
 		<string>#0b6db7</string>
 		<key>tertiaryBrandColor</key>
 		<string>#006f3b</string>
-		<key>pantone660</key>
-		<string>#0b6db7</string>
-		<key>pantone107u</key>
-		<string>#ffea53</string>
-		<key>pantone349</key>
-		<string>#006f3b</string>
-		<key>pantone484</key>
-		<string>#9f1d21</string>
-		<key>pantone2603</key>
-		<string>#722b8d</string>
-		<key>pantone7530u</key>
-		<string>#ad9f96</string>
-		<key>pantone7528u</key>
-		<string>#d4c9c0</string>
 		<key>iconDefaultFillColor</key>
 		<string>lightGrayColor</string>
 		<key>iconDefaultSelectedFillColor</key>
@@ -71,8 +53,6 @@
 		<string>lightGrayColor</string>
 		<key>buttonTintColor</key>
 		<string>darkGrayColor</string>
-		<key>dashboardBackgroundColor</key>
-		<string>clearColor</string>
 		<key>progressViewTrackTintColor</key>
 		<string>lightGrayColor</string>
 		<key>progressViewTintColor</key>
@@ -86,13 +66,17 @@
 		<key>segmentedControlTintColor</key>
 		<string>darkGrayColor</string>
 		<key>segmentedControlTextColor</key>
-		<string>lightGrayColor</string>
+		<string>darkGrayColor</string>
 		<key>segmentedControlSelectedTextColor</key>
 		<string>primaryBrandColor</string>
-		<key>tabBarItemTextColor</key>
+		<key>segmentedControlDisabledTextColor</key>
 		<string>lightGrayColor</string>
+		<key>tabBarItemTextColor</key>
+		<string>darkGrayColor</string>
 		<key>tabBarItemSelectedTextColor</key>
 		<string>primaryBrandColor</string>
+		<key>tabBarItemDisabledTextColor</key>
+		<string>lightGrayColor</string>
 		<key>tabBarTintColor</key>
 		<string>primaryBrandColor</string>
 		<key>tabBarBarTintColor</key>
@@ -469,27 +453,13 @@
 	</dict>
 	<key>metrics</key>
 	<dict>
-		<key>navigationBarTitleShadowOffset</key>
-		<string>1,1</string>
 		<key>navigationBarTitleVerticalPositionAdjustment</key>
 		<integer>0</integer>
-		<key>barButtonItemTextShadowOffset</key>
-		<string>1,1</string>
-		<key>segmentedControlNormalTextShadowOffset</key>
-		<string>1,1</string>
-		<key>segmentedControSelectedTextShadowOffset</key>
-		<string>-1,-1</string>
-		<key>defaultShadowOffset</key>
-		<string>1,1</string>
-		<key>defaultSelectedShadowOffset</key>
-		<string>-1,-1</string>
 	</dict>
 	<key>images</key>
 	<dict>
 		<key>nilImage</key>
 		<string>nil</string>
-		<key>navBarShadowImage</key>
-		<string>nilImage</string>
 		<key>navBarBackgroundImage</key>
 		<string>whiteBox.png:0,0,0,0:stretch</string>
 		<key>texturedImage</key>

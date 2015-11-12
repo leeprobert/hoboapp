@@ -53,5 +53,10 @@
 	</array>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Entypo.ttf</string>
+		<string>EntypoSocial.ttf</string>
+	</array>
 </dict>
 </plist>

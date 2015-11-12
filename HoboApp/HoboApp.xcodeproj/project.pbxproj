@@ -19,6 +19,13 @@
 		520CF6C31BEA525A00A905B5 /* UIColor_rgb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6C21BEA525A00A905B5 /* UIColor_rgb.swift */; };
 		5220759B1BED044300A74112 /* UIColor_hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6C01BEA513D00A905B5 /* UIColor_hex.swift */; };
 		5220759C1BED044500A74112 /* UIColor_hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6C01BEA513D00A905B5 /* UIColor_hex.swift */; };
+		5235DE2C1BF0A7F500A17ECE /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5235DE281BF0A7F500A17ECE /* Entypo.ttf */; };
+		5235DE2E1BF0A7F500A17ECE /* EntypoSocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5235DE2B1BF0A7F500A17ECE /* EntypoSocial.ttf */; };
+		5235DE301BF0AB4C00A17ECE /* EntypoIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235DE2F1BF0AB4C00A17ECE /* EntypoIcon.swift */; };
+		5235DE321BF103B000A17ECE /* EntypoIconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235DE311BF103B000A17ECE /* EntypoIconTests.swift */; };
+		5235DE331BF103D100A17ECE /* EntypoIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235DE2F1BF0AB4C00A17ECE /* EntypoIcon.swift */; };
+		5235DE341BF1156A00A17ECE /* EntypoSocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5235DE2B1BF0A7F500A17ECE /* EntypoSocial.ttf */; };
+		5235DE351BF1156F00A17ECE /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5235DE281BF0A7F500A17ECE /* Entypo.ttf */; };
 		5254C58B1BEB60460025CA97 /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6B91BEA175400A905B5 /* StyleManager.swift */; };
 		5254C58D1BEB607B0025CA97 /* StyleManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254C58C1BEB607B0025CA97 /* StyleManagerTests.swift */; };
 		5254C58F1BEB765C0025CA97 /* UIColor_rgb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CF6C21BEA525A00A905B5 /* UIColor_rgb.swift */; };
@@ -56,6 +63,12 @@
 		520CF6B91BEA175400A905B5 /* StyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyleManager.swift; path = styles/StyleManager.swift; sourceTree = "<group>"; };
 		520CF6C01BEA513D00A905B5 /* UIColor_hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColor_hex.swift; path = styles/UIColor_hex.swift; sourceTree = "<group>"; };
 		520CF6C21BEA525A00A905B5 /* UIColor_rgb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColor_rgb.swift; path = styles/UIColor_rgb.swift; sourceTree = "<group>"; };
+		5235DE281BF0A7F500A17ECE /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Entypo.ttf; path = styles/Entypo.ttf; sourceTree = "<group>"; };
+		5235DE291BF0A7F500A17ECE /* EntypoLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntypoLabel.h; path = styles/EntypoLabel.h; sourceTree = "<group>"; };
+		5235DE2A1BF0A7F500A17ECE /* EntypoLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EntypoLabel.m; path = styles/EntypoLabel.m; sourceTree = "<group>"; };
+		5235DE2B1BF0A7F500A17ECE /* EntypoSocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EntypoSocial.ttf; path = styles/EntypoSocial.ttf; sourceTree = "<group>"; };
+		5235DE2F1BF0AB4C00A17ECE /* EntypoIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntypoIcon.swift; path = styles/EntypoIcon.swift; sourceTree = "<group>"; };
+		5235DE311BF103B000A17ECE /* EntypoIconTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntypoIconTests.swift; sourceTree = "<group>"; };
 		5254C58C1BEB607B0025CA97 /* StyleManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleManagerTests.swift; sourceTree = "<group>"; };
 		5254C5911BEBAC4D0025CA97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5254C5931BEBB1140025CA97 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +147,7 @@
 			children = (
 				520806F71BDE8B160043D005 /* HoboAppTests.swift */,
 				5254C58C1BEB607B0025CA97 /* StyleManagerTests.swift */,
+				5235DE311BF103B000A17ECE /* EntypoIconTests.swift */,
 				520806F51BDE8B160043D005 /* Supporting Files */,
 			);
 			path = HoboAppTests;
@@ -150,6 +164,11 @@
 		520CF6B81BEA164100A905B5 /* styles */ = {
 			isa = PBXGroup;
 			children = (
+				5235DE281BF0A7F500A17ECE /* Entypo.ttf */,
+				5235DE2B1BF0A7F500A17ECE /* EntypoSocial.ttf */,
+				5235DE291BF0A7F500A17ECE /* EntypoLabel.h */,
+				5235DE2A1BF0A7F500A17ECE /* EntypoLabel.m */,
+				5235DE2F1BF0AB4C00A17ECE /* EntypoIcon.swift */,
 				520CF6B31BEA162400A905B5 /* hoboStyles.plist */,
 				520CF6B41BEA162400A905B5 /* StyleManager.h */,
 				520CF6B51BEA162400A905B5 /* StyleManager.m */,
@@ -267,7 +286,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5235DE2E1BF0A7F500A17ECE /* EntypoSocial.ttf in Resources */,
 				520807021BDE96900043D005 /* Settings.bundle in Resources */,
+				5235DE2C1BF0A7F500A17ECE /* Entypo.ttf in Resources */,
 				5254C5921BEBAC4D0025CA97 /* Main.storyboard in Resources */,
 				520CF6B61BEA162400A905B5 /* hoboStyles.plist in Resources */,
 				520806EC1BDE8B160043D005 /* LaunchScreen.xib in Resources */,
@@ -279,6 +300,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5235DE341BF1156A00A17ECE /* EntypoSocial.ttf in Resources */,
+				5235DE351BF1156F00A17ECE /* Entypo.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +363,7 @@
 				520CF6B11BE8DD0900A905B5 /* HoboTableViewController.swift in Sources */,
 				520CF6BA1BEA175400A905B5 /* StyleManager.swift in Sources */,
 				520806E41BDE8B160043D005 /* EntryViewController.swift in Sources */,
+				5235DE301BF0AB4C00A17ECE /* EntypoIcon.swift in Sources */,
 				520806E21BDE8B160043D005 /* AppDelegate.swift in Sources */,
 				520CF6C31BEA525A00A905B5 /* UIColor_rgb.swift in Sources */,
 				5254C5941BEBB1140025CA97 /* MapViewController.swift in Sources */,
@@ -352,6 +376,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				520806F81BDE8B160043D005 /* HoboAppTests.swift in Sources */,
+				5235DE331BF103D100A17ECE /* EntypoIcon.swift in Sources */,
+				5235DE321BF103B000A17ECE /* EntypoIconTests.swift in Sources */,
 				5220759B1BED044300A74112 /* UIColor_hex.swift in Sources */,
 				5254C58F1BEB765C0025CA97 /* UIColor_rgb.swift in Sources */,
 				5254C58D1BEB607B0025CA97 /* StyleManagerTests.swift in Sources */,
